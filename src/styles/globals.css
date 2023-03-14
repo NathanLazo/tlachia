@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    @apply scroll-smooth;
+}
+
+.tooltip-inner {
+    white-space: pre-wrap;
+}
+
+.custom-shape-divider-top-1653013650 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1653013650 svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 239px;
+}
+
+.custom-shape-divider-top-1653013650 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1653013650 svg {
+        width: calc(113% + 1.3px);
+        height: 230px;
+    }
+}
