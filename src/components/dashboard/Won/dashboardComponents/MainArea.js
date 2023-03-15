@@ -73,7 +73,7 @@ const MainArea = ({ form, setFormSelected }) => {
                     <p className="flex">
                         You can use this qr in your phone in order to follow the video tutorial
                         <Link href="/qr">
-                            <p className="text-red-500 pl-1 cursor pointer">{'[Here]'}</p>
+                            <p className="text-red-500 pl-1 cursor-pointer">{'[Here]'}</p>
                         </Link>
                     </p>
 
