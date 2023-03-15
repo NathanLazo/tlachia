@@ -22,7 +22,7 @@ const useAuthProvider = () => {
 
     // If user expires token, redirect to login - TODO: I want a better way to have protected routes
     const redirectToLogin = () => {
-        if (router.pathname !== '/' && router.pathname !== '/login' && router.pathname !== '/signup' && router.pathname !== '/transactions') {
+        if (router.pathname !== '/' && router.pathname !== '/qr' && router.pathname !== '/login' && router.pathname !== '/signup' && router.pathname !== '/transactions') {
             router.push('/login');
         }
     };
