@@ -41,6 +41,7 @@ import contractAbi from '@abi/abi.json';
 
 import { QrReader } from 'react-qr-reader';
 import { toast } from 'react-hot-toast';
+import Link from 'next/link';
 
 const MainArea = ({ form, setFormSelected }) => {
     const [observation, setObservation] = React.useState('');
@@ -69,6 +70,13 @@ const MainArea = ({ form, setFormSelected }) => {
             <div className="min-h-0 flex-1 overflow-y-auto">
                 {/* Thread section*/}
                 <form className="py-4 space-y-2 sm:px-6 sm:space-y-4 lg:px-8" onSubmit={handleSubmit}>
+                    <p className="flex">
+                        You can use this qr in your phone in order to follow the video tutorial
+                        <Link href="/qr">
+                            <p className="text-red-500 pl-1 cursor pointer">{'[Here]'}</p>
+                        </Link>
+                    </p>
+
                     {cow == '' && (
                         <QrReader
                             onResult={(result, error) => {
